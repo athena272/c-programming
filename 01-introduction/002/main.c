@@ -3,7 +3,8 @@
 
 // escape character to skip a line -> \n
 
-int main() {
+int main()
+{
 
     // printf is an output function
     printf("\n-------------------------------\n\n");

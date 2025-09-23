@@ -3,7 +3,8 @@
 
 // 003 system("pause")
 
-int main() {
+int main()
+{
 
     // printf is an output function
     printf("\n-------------------------------\n\n");
