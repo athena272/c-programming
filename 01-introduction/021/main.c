@@ -20,7 +20,7 @@ int main(void)
     printf("As stored in float : %.20f\n", xf);
     printf("As stored in double: %.20f\n\n", xd);
 
-    // Mostrar com quantidades de casas que destacam a perda de precisão
+    // Show with different numbers of decimal places to highlight the loss of precision
     printf("float  (7 dec places) : %.7f\n", xf);
     printf("double (16 dec places): %.16f\n", xd);
 
