@@ -2,17 +2,17 @@
 #include <stdlib.h>
 
 /*
-    Read an amount in Brazilian reais (BRL) and convert it to US dollars (USD).
-    Exchange rate: 1 USD = 5.30 BRL -> USD = BRL / 5.30
+  Read an amount in Brazilian reais (BRL) and convert it to US dollars (USD).
+  Exchange rate: 1 USD = 5.30 BRL  →  USD = BRL / 5.30
 */
 
 int main()
 {
-    double  brl, usd;
-    const double BRL_per_USD = 5.30;
+    double brl, usd;
+    const double BRL_per_USD = 5.30; // 1 USD = 5.30 BRL
 
-    printf("Enter te amount in BRL (reais): ");
-    if(scanf("%lf", &brl) != 1 || brl < 0)
+    printf("Enter the amount in BRL (reais): ");
+    if (scanf("%lf", &brl) != 1 || brl < 0)
     {
         fprintf(stderr, "Invalid input.\n");
         return 1;
