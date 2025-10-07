@@ -27,6 +27,6 @@ int main(void) {
     else
         printf("\tCondition 'if (0)' is FALSE (zero).\n");
 
-    printf("\nProgram continues...\n");
+    printf("Program continues...\n");
     return 0;
 }
