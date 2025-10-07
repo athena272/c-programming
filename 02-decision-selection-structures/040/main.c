@@ -9,20 +9,20 @@
 int main(void) {
     int a = 10;
 
-    printf("\nEnter any integer: ");
+    printf("Enter any integer: ");
     if (scanf("%d", &a) != 1) {
         fprintf(stderr, "Invalid input.\n");
         return 1;
     }
 
     if (a < 0) {
-        printf("\n\tNegative value!\n");
+        printf("\tNegative value!\n");
     } else if (a == 0) {
-        printf("\n\tValue is zero.\n");
+        printf("\tValue is zero.\n");
     } else {
-        printf("\n\tPositive value!\n");
+        printf("\tPositive value!\n");
     }
 
-    printf("\nProgram continues...\n");
+    printf("Program continues...\n");
     return 0;
 }
