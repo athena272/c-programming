@@ -22,6 +22,6 @@ int main(void) {
         printf("\tPositive or zero value (again).\n");
     }
 
-    printf("\nProgram continues...\n");
+    printf("Program continues...\n");
     return 0;
 }
