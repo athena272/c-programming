@@ -11,15 +11,15 @@ int main(void)
 {
     int a = 10;
 
-    printf("\nEnter any integer: ");
+    printf("Enter any integer: ");
     scanf("%d", &a);
 
     printf("Nested Ternary Operator:\n");
 
-    (a < 0)   ? printf("\n\tNegative value!\n")
-    : (a > 0) ? printf("\n\tPositive value!\n")
-              : printf("\n\tValue equals zero!\n");
+    (a < 0)   ? printf("\tNegative value!\n")
+    : (a > 0) ? printf("\tPositive value!\n")
+              : printf("\tValue equals zero!\n");
 
-    printf("\nProgram continues...\n");
+    printf("Program continues...\n");
     return 0;
 }
