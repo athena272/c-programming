@@ -6,22 +6,23 @@
    syntax: condition ? true_expr : false_expr
 */
 
-int main(void) {
+int main(void)
+{
     int a = 10;
 
-    printf("\nEnter any integer: ");
+    printf("Enter any integer: ");
     scanf("%d", &a);
 
     printf("Ternary operator:\n");
-    (a < 0) ? printf("\n\tNegative value!\n")
-            : printf("\n\tPositive or zero value!\n");
+    (a < 0) ? printf("\tNegative value!\n")
+            : printf("\tPositive or zero value!\n");
 
     printf("\nIf/else\n");
     if (a < 0)
-        printf("\n\tNegative value!\n");
+        printf("\tNegative value!\n");
     else
-        printf("\n\tPositive or zero value!\n");
+        printf("\tPositive or zero value!\n");
 
-    printf("\nProgram continues...\n");
+    printf("Program continues...\n");
     return 0;
 }
