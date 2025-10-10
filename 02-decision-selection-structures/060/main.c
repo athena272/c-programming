@@ -29,22 +29,22 @@ int main(void)
     case 8:
     case 10:
     case 12:
-        printf("\nThis month has 31 days\n");
+        printf("This month has 31 days\n");
         break;
 
     case 2:
-        printf("\nThis month has 28 days\n");
+        printf("This month has 28 days\n");
         break;
 
     case 4:
     case 6:
     case 9:
     case 11:
-        printf("\nThis month has 30 days\n");
+        printf("This month has 30 days\n");
         break;
 
     default:
-        printf("\nValue does not correspond to any month!\n");
+        printf("Value does not correspond to any month!\n");
     }
 
     return EXIT_SUCCESS;
