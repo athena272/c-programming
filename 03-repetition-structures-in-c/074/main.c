@@ -16,7 +16,7 @@ int main(void)
     // read and validate first grade
     do
     {
-        printf("Enter the first grade (0–10): ");
+        printf("Enter the first grade (0-10): ");
         if (scanf("%lf", &grade1) != 1)
         {
             fprintf(stderr, "Invalid input.\n");
@@ -27,7 +27,7 @@ int main(void)
     // read and validate second grade
     do
     {
-        printf("Enter the second grade (0–10): ");
+        printf("Enter the second grade (0-10): ");
         if (scanf("%lf", &grade2) != 1)
         {
             fprintf(stderr, "Invalid input.\n");
