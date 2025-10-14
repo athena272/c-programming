@@ -10,7 +10,7 @@
     - Version 2: More efficient, incrementing by 2 to skip even numbers.
 */
 
-int main(void)
+int main()
 {
     int i, sum = 0;
 

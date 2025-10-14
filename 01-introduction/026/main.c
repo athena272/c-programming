@@ -6,7 +6,7 @@
    remainder operator (%)
 */
 
-int main(void)
+int main()
 {
     int a = 7, b = 21;
 

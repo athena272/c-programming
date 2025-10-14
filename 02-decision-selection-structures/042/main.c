@@ -8,7 +8,7 @@
    It prevents bugs when adding lines later and keeps indentation consistent.
 */
 
-int main(void) {
+int main() {
     int a = 10;
 
     printf("Enter any integer: ");

@@ -7,7 +7,7 @@
    %lli / %lld for printing long long int
 */
 
-int main(void)
+int main()
 {
     long long int x = 2147483647;
 

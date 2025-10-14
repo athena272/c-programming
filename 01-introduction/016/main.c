@@ -7,7 +7,7 @@
    sizeof x  or  sizeof(int)
 */
 
-int main(void)
+int main()
 {
     float x = 1.0f;
 

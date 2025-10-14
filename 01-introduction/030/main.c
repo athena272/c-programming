@@ -20,7 +20,7 @@
    setlocale(LC_ALL, "Portuguese");// Portuguese locale
 */
 
-int main(void) {
+int main() {
     // show which locale is being used
     printf("Current locale: %s\n", setlocale(LC_ALL, "Portuguese"));
 

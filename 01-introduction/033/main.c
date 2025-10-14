@@ -7,7 +7,7 @@
   without using any auxiliary variable.
 */
 
-int main(void) {
+int main() {
     int a, b;
 
     printf("Enter two values: ");

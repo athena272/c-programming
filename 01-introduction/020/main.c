@@ -7,7 +7,7 @@
    %f for printing floats
 */
 
-int main(void)
+int main()
 {
     float x = 3.1415f;
 

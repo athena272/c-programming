@@ -8,7 +8,7 @@
   say it is not divisible by any of them.
 */
 
-int main(void)
+int main()
 {
     int num;
 

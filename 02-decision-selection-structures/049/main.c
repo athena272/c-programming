@@ -12,7 +12,7 @@
    2) Chained else-if
 */
 
-int main(void)
+int main()
 {
     int a = 10;
 

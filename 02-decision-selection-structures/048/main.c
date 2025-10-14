@@ -12,7 +12,7 @@
    false false| false
 */
 
-int main(void)
+int main()
 {
     int age;
 

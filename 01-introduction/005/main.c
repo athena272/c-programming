@@ -6,7 +6,7 @@
    Reading floating-point numbers
 */
 
-int main(void)
+int main()
 {
     float number = 3.1415;
 

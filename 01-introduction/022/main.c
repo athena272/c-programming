@@ -8,7 +8,7 @@
    long double -> %Lf
 */
 
-int main(void)
+int main()
 {
     float x = 3.1415f;
     long double y = 3.1415896587458962548L; // note the 'L' suffix for long double literals

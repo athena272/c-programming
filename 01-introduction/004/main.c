@@ -6,7 +6,7 @@
     Reading integer numbers
 */
 
-int main(void)
+int main()
 {
 
     int value1, value2; // I created variables to store integer values

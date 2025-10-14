@@ -10,7 +10,7 @@
    false |  true
 */
 
-int main(void)
+int main()
 {
     int a = 10;
 

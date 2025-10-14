@@ -13,7 +13,7 @@
    Tip: we use tolower() so the menu accepts both upper- and lowercase letters.
 */
 
-int main(void)
+int main()
 {
     char option;
 

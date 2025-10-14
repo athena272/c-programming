@@ -9,7 +9,7 @@
     and print the semester average.
 */
 
-int main(void)
+int main()
 {
     double grade1, grade2, avg;
 

@@ -6,7 +6,7 @@
    syntax: condition ? true_expr : false_expr
 */
 
-int main(void)
+int main()
 {
     int a = 10;
 

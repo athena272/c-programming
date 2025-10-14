@@ -7,7 +7,7 @@
     Example: print the numbers 0 to 10 using each repetition structure.
 */
 
-int main(void)
+int main()
 {
     int i;
 

@@ -7,7 +7,7 @@
    Below are two solutions: (1) nested ifs, (2) initialize and update.
 */
 
-int main(void)
+int main()
 {
     int a, b, c;
     int smallest, largest;

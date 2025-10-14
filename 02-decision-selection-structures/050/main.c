@@ -11,7 +11,7 @@
      5 - Exit
 */
 
-int main(void)
+int main()
 {
     int option;
 

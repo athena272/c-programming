@@ -10,7 +10,7 @@
     Consider the correct password to be 123456.
 */
 
-int main(void)
+int main()
 {
     const int correctPassword = 123456;
     int password;

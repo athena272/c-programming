@@ -8,7 +8,7 @@
     and then using a for loop (recommended).
 */
 
-int main(void)
+int main()
 {
     int i = 0;
 

@@ -7,7 +7,7 @@
    function getchar()
 */
 
-int main(void)
+int main()
 {
     char letter;
 

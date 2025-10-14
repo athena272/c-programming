@@ -6,7 +6,7 @@
    Reading characters
 */
 
-int main(void)
+int main()
 {
     char gender = 'k';
 

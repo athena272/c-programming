@@ -7,7 +7,7 @@
     Read an integer between 1 and 10 and print its multiplication table (1 to 10).
 */
 
-int main(void)
+int main()
 {
     int i, num;
 

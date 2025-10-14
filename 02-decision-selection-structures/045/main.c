@@ -7,7 +7,7 @@
    to check whether a number is negative, positive, or zero.
 */
 
-int main(void)
+int main()
 {
     int a = 10;
 

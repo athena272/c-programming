@@ -8,7 +8,7 @@
     then read another value greater than zero using a do-while loop.
 */
 
-int main(void)
+int main()
 {
     int value1, value2;
 
