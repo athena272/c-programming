@@ -8,7 +8,7 @@
     with an increment of 2.
 */
 
-int main()
+int main(void)
 {
     int i;
 

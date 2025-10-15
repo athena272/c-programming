@@ -7,7 +7,7 @@
     assuming the bill is split equality
 */
 
-int main()
+int main(void)
 {
     int numPeople;
     float billAmount, tipPercent;

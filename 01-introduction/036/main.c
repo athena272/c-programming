@@ -6,7 +6,7 @@
   Exchange rate: 1 USD = 5.30 BRL  →  USD = BRL / 5.30
 */
 
-int main()
+int main(void)
 {
     double brl, usd;
     const double BRL_per_USD = 5.30; // 1 USD = 5.30 BRL

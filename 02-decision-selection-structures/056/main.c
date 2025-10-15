@@ -22,7 +22,7 @@
     +---------------------------+----------------------+
 */
 
-int main()
+int main(void)
 {
     double weight, height, bmi;
 

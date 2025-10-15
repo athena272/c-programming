@@ -7,7 +7,7 @@
     Write a program that prints on the screen all multiples of 7 between 1 and 9999.
 */
 
-int main()
+int main(void)
 {
     int i;
 

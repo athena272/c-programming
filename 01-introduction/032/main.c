@@ -9,7 +9,7 @@
   the value that was initially in 'a'.
 */
 
-int main()
+int main(void)
 {
     int a, b, aux;
     printf("Enter two values: ");

@@ -20,7 +20,7 @@
    Note: '\0' is the null terminator for C strings (not printable).
 */
 
-int main()
+int main(void)
 {
     printf("\n\n\tThis is a message with an escaped \\'a\\' printed on the screen.\n\n");
 

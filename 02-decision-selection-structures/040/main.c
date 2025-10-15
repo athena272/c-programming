@@ -6,7 +6,7 @@
    Check whether an integer is negative, zero, or positive.
 */
 
-int main() {
+int main(void) {
     int a = 10;
 
     printf("Enter any integer: ");

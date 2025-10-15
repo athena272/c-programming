@@ -9,7 +9,7 @@
     Note: Consider February as having 28 days.
 */
 
-int main()
+int main(void)
 {
     int month;
 

@@ -8,7 +8,7 @@
     Ask the user for a character and say whether it is a vowel or not.
 */
 
-int main()
+int main(void)
 {
     char ch;
     printf("Enter a character: ");

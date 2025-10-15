@@ -10,7 +10,7 @@
     "The 3 sides do NOT form a triangle!"
 */
 
-int main()
+int main(void)
 {
     int a, b, c;
 

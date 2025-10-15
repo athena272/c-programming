@@ -6,7 +6,7 @@
    Read gender, age, weight and height
 */
 
-int main()
+int main(void)
 {
     char gender;
     int age;

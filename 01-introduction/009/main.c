@@ -7,7 +7,7 @@
    function fgetc()
 */
 
-int main()
+int main(void)
 {
     char letter;
     printf("Type a letter: ");

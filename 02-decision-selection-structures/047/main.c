@@ -7,7 +7,7 @@
    Reads gender (f/F or m/M) and age, then checks conscription rule.
 */
 
-int main()
+int main(void)
 {
     int age;
     char gender;

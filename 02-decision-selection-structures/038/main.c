@@ -12,7 +12,7 @@ static void print_relations(int a, int b)
     printf("a != b  : %d\n", a != b);
 }
 
-int main()
+int main(void)
 {
     int a = 10, b = 20;
 

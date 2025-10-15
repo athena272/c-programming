@@ -8,7 +8,7 @@
     and then using a for loop.
 */
 
-int main()
+int main(void)
 {
     int i = 10;
 

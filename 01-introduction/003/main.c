@@ -3,7 +3,7 @@
 
 // 003 system("pause")
 
-int main()
+int main(void)
 {
 
     // printf is an output function

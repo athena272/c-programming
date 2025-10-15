@@ -9,7 +9,7 @@
     - More efficient, incrementing by 2 to skip even numbers.
 */
 
-int main()
+int main(void)
 {
     int i, sum;
     for (i = 1; i <= 1000; i += 2)

@@ -6,7 +6,7 @@
    Checking if a number is negative
 */
 
-int main() {
+int main(void) {
     int a = 10;
 
     printf("Enter any value: ");

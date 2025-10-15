@@ -8,7 +8,7 @@
     provided by the user (n > 0).
 */
 
-int main()
+int main(void)
 {
     int i, n, A = 0;
 

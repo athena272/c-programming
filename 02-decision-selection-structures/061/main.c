@@ -14,7 +14,7 @@
       'p' – Weighted (weights: 3, 3, 4).
 */
 
-int main()
+int main(void)
 {
     double g1, g2, g3;
     char choice;

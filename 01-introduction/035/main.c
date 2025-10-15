@@ -9,7 +9,7 @@
     net = days * 45 - 8% of (days * 45).
 */
 
-int main()
+int main(void)
 {
     float days;
     const float dailyRate = 45.0;

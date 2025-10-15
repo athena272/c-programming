@@ -8,7 +8,7 @@
    %d for printing int
 */
 
-int main()
+int main(void)
 {
     int x = 2147483647; // maximum value for a 32-bit signed int
 

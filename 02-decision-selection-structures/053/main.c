@@ -8,7 +8,7 @@
   Note: this version intentionally does NOT use a loop.
 */
 
-int main()
+int main(void)
 {
     int value, positives = 0, negatives = 0;
 

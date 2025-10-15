@@ -19,7 +19,7 @@
    pow()            exponentiation (from <math.h>)
 */
 
-int main()
+int main(void)
 {
     int a = 10, b = 20;
 

@@ -3,7 +3,7 @@
 
 // escape character to skip a line -> \n
 
-int main()
+int main(void)
 {
 
     // printf is an output function

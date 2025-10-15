@@ -9,7 +9,7 @@
     print the message "Invalid month".
 */
 
-int main()
+int main(void)
 {
     int month;
 

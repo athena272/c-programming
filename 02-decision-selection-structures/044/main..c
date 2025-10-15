@@ -7,7 +7,7 @@
    is negative, positive, or equal to zero.
 */
 
-int main()
+int main(void)
 {
     int a = 10;
 

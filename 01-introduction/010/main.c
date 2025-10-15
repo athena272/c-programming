@@ -6,7 +6,7 @@
    Reading multiple values
 */
 
-int main()
+int main(void)
 {
     int num1, num2, num3;
 

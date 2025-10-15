@@ -6,7 +6,7 @@
    increment operator ++
 */
 
-int main()
+int main(void)
 {
     int result, counter = 10;
 

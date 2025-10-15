@@ -8,7 +8,7 @@
     (inclusive), when applicable.
 */
 
-int main()
+int main(void)
 {
     int i, n;
 

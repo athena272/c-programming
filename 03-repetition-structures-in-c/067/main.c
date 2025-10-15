@@ -8,7 +8,7 @@
     While the value is not greater than zero, keep asking again.
 */
 
-int main()
+int main(void)
 {
     int value;
 

@@ -13,7 +13,7 @@
       0 – Exit
 */
 
-int main()
+int main(void)
 {
     int option, num1, num2;
 

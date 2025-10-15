@@ -6,7 +6,7 @@
    type casting
 */
 
-int main()
+int main(void)
 {
     int a = 10, b = 20;
     float pi = 3.1415f;

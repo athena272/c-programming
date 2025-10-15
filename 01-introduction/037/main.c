@@ -9,7 +9,7 @@
     Output: 1:1:12
 */
 
-int main()
+int main(void)
 {
     int totalSeconds, hours, minutes, seconds, remaining;
 

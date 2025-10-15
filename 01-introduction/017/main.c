@@ -8,7 +8,7 @@
    %hi or %d for printing short
 */
 
-int main()
+int main(void)
 {
     int y = 0;
     short int x = 32767;

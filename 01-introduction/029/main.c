@@ -12,7 +12,7 @@
    unsigned long int   -> %lu
 */
 
-int main()
+int main(void)
 {
     unsigned int x = 2147483647; // 0 ... 4,294,967,295
 

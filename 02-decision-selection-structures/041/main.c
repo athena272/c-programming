@@ -7,7 +7,7 @@
    - Zero is treated as FALSE.
 */
 
-int main() {
+int main(void) {
     int a = 10;
 
     printf("Enter any integer: ");

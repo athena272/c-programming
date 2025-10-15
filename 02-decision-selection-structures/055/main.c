@@ -10,7 +10,7 @@
   Use the exchange rate: 1 USD = 5.30 BRL.
 */
 
-int main()
+int main(void)
 {
     const double RATE = 5.30;
     double amount, converted;

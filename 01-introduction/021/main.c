@@ -7,7 +7,7 @@
    %lf for printing doubles
 */
 
-int main()
+int main(void)
 {
     float x = 3.1415f;
     double y = 3.1415896587458962548;
