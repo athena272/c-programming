@@ -8,7 +8,7 @@
             "args": [
                 "bash",
                 "-c",
-                "cd '$(wslpath -u '${fileDirname}')' && FILE_WIN='${file}'; DIR_WIN='${fileDirname}'; FILE_WSL=$(wslpath -u \"$FILE_WIN\"); DIR_WSL=$(wslpath -u \"$DIR_WIN\"); OUTPUT_NAME=$(basename \"$FILE_WSL\" .c); gcc -g \"$FILE_WSL\" -o \"$DIR_WSL/$OUTPUT_NAME\" -Wall -Wextra"
+                "bash /mnt/c/GitHubCloud/c-programming/.vscode/compile-wsl.sh \"${file}\" \"${fileDirname}\" \"-g\""
             ],
             "options": {
                 "cwd": "${fileDirname}",
@@ -36,7 +36,7 @@
             "args": [
                 "bash",
                 "-c",
-                "cd '$(wslpath -u '${fileDirname}')' && FILE_WIN='${file}'; DIR_WIN='${fileDirname}'; FILE_WSL=$(wslpath -u \"$FILE_WIN\"); DIR_WSL=$(wslpath -u \"$DIR_WIN\"); OUTPUT_NAME=$(basename \"$FILE_WSL\" .c); gcc -g -O0 \"$FILE_WSL\" -o \"$DIR_WSL/$OUTPUT_NAME\" -Wall -Wextra"
+                "bash /mnt/c/GitHubCloud/c-programming/.vscode/compile-wsl.sh \"${file}\" \"${fileDirname}\" \"-g -O0\""
             ],
             "options": {
                 "cwd": "${fileDirname}",
