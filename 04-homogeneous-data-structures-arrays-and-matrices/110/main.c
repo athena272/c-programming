@@ -9,6 +9,7 @@ int main()
 {
     int i, j;
     int matrix[ROWS][COLUMNS];
+    printf("Time null equals to: %ld\n", time(NULL));
 
     srand(time(NULL)); // Seed the random number generator for reproducibility
     for (i = 0; i < ROWS; i++)
