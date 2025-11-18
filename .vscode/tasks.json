@@ -1,0 +1,108 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar C (WSL - gcc)",
+            "type": "shell",
+            "command": "wsl.exe",
+            "args": [
+                "bash",
+                "-c",
+                "cd '$(wslpath -u '${fileDirname}')' && FILE_WIN='${file}'; DIR_WIN='${fileDirname}'; FILE_WSL=$(wslpath -u \"$FILE_WIN\"); DIR_WSL=$(wslpath -u \"$DIR_WIN\"); OUTPUT_NAME=$(basename \"$FILE_WSL\" .c); gcc -g \"$FILE_WSL\" -o \"$DIR_WSL/$OUTPUT_NAME\" -Wall -Wextra"
+            ],
+            "options": {
+                "cwd": "${fileDirname}",
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\cmd.exe",
+                    "args": ["/d", "/c"]
+                }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Compilar C (WSL - gcc) - Debug",
+            "type": "shell",
+            "command": "wsl.exe",
+            "args": [
+                "bash",
+                "-c",
+                "cd '$(wslpath -u '${fileDirname}')' && FILE_WIN='${file}'; DIR_WIN='${fileDirname}'; FILE_WSL=$(wslpath -u \"$FILE_WIN\"); DIR_WSL=$(wslpath -u \"$DIR_WIN\"); OUTPUT_NAME=$(basename \"$FILE_WSL\" .c); gcc -g -O0 \"$FILE_WSL\" -o \"$DIR_WSL/$OUTPUT_NAME\" -Wall -Wextra"
+            ],
+            "options": {
+                "cwd": "${fileDirname}",
+                "shell": {
+                    "executable": "C:\\Windows\\System32\\cmd.exe",
+                    "args": ["/d", "/c"]
+                }
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Compilar C (Windows - MinGW)",
+            "type": "shell",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-Wall",
+                "-Wextra"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "silent",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Compilar C (Windows - MinGW) - Debug",
+            "type": "shell",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-g",
+                "-O0",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "-Wall",
+                "-Wextra"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        }
+    ]
+}
+
