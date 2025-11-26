@@ -4,10 +4,13 @@
 
 using namespace std;
 
-bool binary_search_exists(const vll& values, ll target) {
-    ll left = 0; ll right = values.size() - 1;
+bool binary_search_exists(const vll &values, ll target)
+{
+    ll left = 0;
+    ll right = values.size() - 1;
 
-    while (left <= right) {
+    while (left <= right)
+    {
         int mid = left + (right - left) / 2;
 
         if (values[mid] == target)
@@ -28,7 +31,7 @@ int main()
     cin >> fardos_feno >> querys;
     vll fardos_feno_vector(fardos_feno);
 
-    //fardos inputs
+    // fardos inputs
     for (ll i = 0; i < fardos_feno; i++)
     {
         cin >> fardos_feno_vector[i];
@@ -36,7 +39,7 @@ int main()
 
     sort(fardos_feno_vector.begin(), fardos_feno_vector.end());
 
-    //querys inputs
+    // querys inputs
     for (ll i = 0; i < querys; i++)
     {
         ll A, B;
@@ -45,7 +48,7 @@ int main()
 
         for (int i = A; i <= B; i++)
         {
-            if(binary_search_exists(fardos_feno_vector, i))
+            if (binary_search_exists(fardos_feno_vector, i))
             {
                 total++;
             }
@@ -58,6 +61,6 @@ int main()
     {
         cout << final_result[i] << endl;
     }
-    
+
     return 0;
 }
