@@ -4,7 +4,7 @@
 
 using namespace std;
 
-ll binary_search(const vll &values, ll target)
+ll binary_search(const vll values, ll target)
 {
     ll left = 0; 
     ll right = values.size() - 1;
@@ -32,7 +32,26 @@ ll binary_search(const vll &values, ll target)
 
 int main()
 {
+    // Criar array com números de 0 até 100
+    vll values(101);
+    for (ll i = 0; i <= 100; i++)
+    {
+        values[i] = i;
+    }
+
     ll number;
     cin >> number;
-    vll values(100);
+
+    ll result = binary_search(values, number);
+
+    if (result != -1)
+    {
+        cout << "Encontrado no índice: " << result << endl;
+    }
+    else
+    {
+        cout << "Não encontrado" << endl;
+    }
+
+    return 0;
 }
