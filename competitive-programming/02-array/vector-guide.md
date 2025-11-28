@@ -274,3 +274,4 @@ int main() {
 
 4. **Usar push_back() em loop quando o tamanho é conhecido**: Prefira inicializar com tamanho
 
+

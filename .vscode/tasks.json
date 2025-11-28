@@ -2,20 +2,149 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Compilar C (WSL - gcc)",
+            "label": "Compilar C (Windows - MinGW) - Debug",
             "type": "shell",
-            "command": "wsl.exe",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
-                "bash",
-                "-c",
-                "bash /mnt/c/GitHubCloud/c-programming/.vscode/compile-wsl.sh \"${file}\" \"${fileDirname}\" \"-g\""
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c11",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}",
-                "shell": {
-                    "executable": "C:\\Windows\\System32\\cmd.exe",
-                    "args": ["/d", "/c"]
-                }
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compilar C (Windows - MinGW)",
+            "type": "shell",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-std=c11",
+                "-O2",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compilar C++ (Windows - MinGW) - Debug",
+            "type": "shell",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c++17",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Compilar C++ (Windows - MinGW)",
+            "type": "shell",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-Wall",
+                "-Wextra",
+                "-std=c++17",
+                "-O2",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "C++: Compilar arquivo atual (Linux)",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c++17",
+                "-O2",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": false,
+                "clear": false
+            }
+        },
+        {
+            "label": "C++: Compilar arquivo atual",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c++17",
+                "-O2",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
             },
             "problemMatcher": [
                 "$gcc"
@@ -25,71 +154,25 @@
                 "isDefault": true
             },
             "presentation": {
-                "reveal": "silent",
-                "panel": "dedicated"
-            }
-        },
-        {
-            "label": "Compilar C (WSL - gcc) - Debug",
-            "type": "shell",
-            "command": "wsl.exe",
-            "args": [
-                "bash",
-                "-c",
-                "bash /mnt/c/GitHubCloud/c-programming/.vscode/compile-wsl.sh \"${file}\" \"${fileDirname}\" \"-g -O0\""
-            ],
-            "options": {
-                "cwd": "${fileDirname}",
-                "shell": {
-                    "executable": "C:\\Windows\\System32\\cmd.exe",
-                    "args": ["/d", "/c"]
-                }
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "presentation": {
                 "reveal": "always",
-                "panel": "dedicated"
+                "panel": "shared",
+                "focus": false,
+                "clear": false
             }
         },
         {
-            "label": "Compilar C (Windows - MinGW)",
+            "label": "C: Compilar arquivo atual (Linux)",
             "type": "shell",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "command": "gcc",
             "args": [
                 "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c11",
+                "-O2",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "presentation": {
-                "reveal": "silent",
-                "panel": "dedicated"
-            }
-        },
-        {
-            "label": "Compilar C (Windows - MinGW) - Debug",
-            "type": "shell",
-            "command": "C:\\MinGW\\bin\\gcc.exe",
-            "args": [
-                "-g",
-                "-O0",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -100,45 +183,22 @@
             "group": "build",
             "presentation": {
                 "reveal": "always",
-                "panel": "dedicated"
+                "panel": "shared"
             }
         },
         {
-            "label": "Compilar C++ (Windows - MinGW)",
+            "label": "C: Compilar arquivo atual",
             "type": "shell",
-            "command": "C:\\MinGW\\bin\\g++.exe",
+            "command": "gcc",
             "args": [
                 "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c11",
+                "-O2",
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra"
-            ],
-            "options": {
-                "cwd": "${fileDirname}"
-            },
-            "problemMatcher": [
-                "$gcc"
-            ],
-            "group": "build",
-            "presentation": {
-                "reveal": "silent",
-                "panel": "dedicated"
-            }
-        },
-        {
-            "label": "Compilar C++ (Windows - MinGW) - Debug",
-            "type": "shell",
-            "command": "C:\\MinGW\\bin\\g++.exe",
-            "args": [
-                "-g",
-                "-O0",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe",
-                "-Wall",
-                "-Wextra"
+                "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
@@ -149,9 +209,51 @@
             "group": "build",
             "presentation": {
                 "reveal": "always",
-                "panel": "dedicated"
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "C++: Compilar e executar",
+            "type": "shell",
+            "command": "g++ -g -Wall -Wextra -std=c++17 -O2 ${file} -o ${fileDirname}/${fileBasenameNoExtension} && ${fileDirname}/${fileBasenameNoExtension}",
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "C++: Compilar com flags de competição",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "-Wall",
+                "-Wextra",
+                "-std=c++17",
+                "-O2",
+                "-DLOCAL",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
             }
         }
     ]
 }
-
