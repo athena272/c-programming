@@ -595,3 +595,4 @@ int main() {
 4. **Grafos direcionados**: Cuidado com a direção das arestas
 5. **Grafos ponderados**: Use `vector<vector<pair<int, int>>>`
 
+
