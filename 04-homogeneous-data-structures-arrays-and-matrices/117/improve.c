@@ -7,7 +7,7 @@ int main()
 {
     srand(time(NULL));
     int i, aux;
-    int vector[1000];
+    int vector[100];
     int array_length = sizeof(vector) / sizeof(vector[0]);
     bool swapped_flag = false;
     int num_swappz = 0;
