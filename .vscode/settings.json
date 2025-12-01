@@ -16,9 +16,6 @@
         "*.hpp": "cpp",
         "bits/stdc++.h": "cpp"
     },
-    
-    // Formatação
-    "C_Cpp.clang_format_style": "{ BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4, UseTab: Never }",
     "editor.formatOnSave": false,
     "editor.tabSize": 4,
     "editor.insertSpaces": true,
@@ -33,5 +30,16 @@
         "c": "cd $dir && gcc -g -Wall -Wextra -std=c11 -O2 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
     },
     "code-runner.clearPreviousOutput": true,
-    "code-runner.saveFileBeforeRun": true
+    "code-runner.saveFileBeforeRun": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.snippetSuggestions": "none",
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "accessibility.signals.lineHasInlineSuggestion": {
+        "sound": "off"
+    },
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never"
 }
